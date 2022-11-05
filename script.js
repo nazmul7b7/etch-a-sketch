@@ -34,3 +34,10 @@ function colorCell() {
 function changeColor(choice) {
     color = choice;
 }
+
+function resetGrid() {
+    const container = document.querySelector('.container');
+
+    let cells = container.querySelectorAll('div');
+    cells.forEach((div) => div.style.backgroundColor = 'white');    
+}
