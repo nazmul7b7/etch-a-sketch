@@ -13,12 +13,15 @@
     <div class="container"></div>
 
     <div class="buttons">
-        <button>Black</button>
-        <button>Red</button>
-        <button>Random</button>
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="changeColor('random')">Random</button>
         <button>Reset</button>
     </div>
-    <input type="text" value="0">
-    
+    <div>
+        <input type="text" value="0" onchange="changeSize(this.value)">
+        <button>Set Size</button>
+    </div>
 </body>
 </html>
