@@ -8,20 +8,24 @@
     <script src="script.js" defer></script>
     <title>Etch A Sketch</title>
 </head>
-<body>
+<body>   
+
+    <div class="header">Etch A Sketch</div>
+
+    <div class="mode">Mode: Coloring</div>
 
     <div class="container"></div>
 
     <div class="buttons">
-        <button onclick="changeColor('black')">Black</button>
-        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('black')">Black</button>        
         <button onclick="changeColor('white')">Eraser</button>
         <button onclick="changeColor('random')">Random</button>
         <button onclick="resetGrid()">Reset</button>
     </div>
     <div>
-        <input type="text" value="0" onchange="changeSize(this.value)">
+        <input type="text" value="16" onchange="changeSize(this.value)">
         <button>Set Size</button>
     </div>
+    <div class="error">Input Must be between 2 and 100</div>   
 </body>
 </html>
